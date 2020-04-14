@@ -87,6 +87,8 @@ set(KIT_SRCS
   qSlicerSettingsViewsPanel.h
   qSlicerSettingsDeveloperPanel.cxx
   qSlicerSettingsDeveloperPanel.h
+  qSlicerSettingsLoadOrientationPanel.cxx
+  qSlicerSettingsLoadOrientationPanel.h
   qSlicerSettingsUserInformationPanel.cxx
   qSlicerSettingsUserInformationPanel.h
   qSlicerStyle.cxx
@@ -213,6 +215,7 @@ set(KIT_MOC_SRCS
   qSlicerSettingsStylesPanel.h
   qSlicerSettingsViewsPanel.h
   qSlicerSettingsDeveloperPanel.h
+  qSlicerSettingsLoadOrientationPanel.h
   qSlicerSettingsUserInformationPanel.h
   qSlicerStyle.h
   qSlicerViewersToolBar.h
@@ -283,6 +286,7 @@ set(KIT_UI_SRCS
   Resources/UI/qSlicerSettingsStylesPanel.ui
   Resources/UI/qSlicerSettingsViewsPanel.ui
   Resources/UI/qSlicerSettingsDeveloperPanel.ui
+  Resources/UI/qSlicerSettingsLoadOrientationPanel.ui
   Resources/UI/qSlicerSettingsUserInformationPanel.ui
   Resources/UI/qSlicerWebWidget.ui
   )

@@ -82,6 +82,7 @@
 #include "qSlicerSettingsStylesPanel.h"
 #include "qSlicerSettingsViewsPanel.h"
 #include "qSlicerSettingsDeveloperPanel.h"
+#include "qSlicerSettingsLoadOrientationPanel.h"
 #include "qSlicerSettingsUserInformationPanel.h"
 
 // qMRMLWidget includes
@@ -294,6 +295,9 @@ void qSlicerApplicationPrivate::init()
 
   qSlicerSettingsDeveloperPanel* developerPanel = new qSlicerSettingsDeveloperPanel;
   this->SettingsDialog->addPanel(qSlicerApplication::tr("Developer"), developerPanel);
+
+  qSlicerSettingsLoadOrientationPanel* loadOrientationPanel = new qSlicerSettingsLoadOrientationPanel;
+  this->SettingsDialog->addPanel(qSlicerApplication::tr("Load Orientation"), loadOrientationPanel);
 
   QObject::connect(this->SettingsDialog, SIGNAL(restartRequested()),
                    q, SLOT(restart()));
